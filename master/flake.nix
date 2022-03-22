@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libkeepass-master.flake = false;
+  inputs.src-libkeepass-master.ref   = "refs/heads/master";
   inputs.src-libkeepass-master.owner = "PMunch";
-  inputs.src-libkeepass-master.ref   = "master";
   inputs.src-libkeepass-master.repo  = "libkeepass";
   inputs.src-libkeepass-master.type  = "github";
   
