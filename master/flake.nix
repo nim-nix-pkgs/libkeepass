@@ -11,7 +11,6 @@
   inputs.src-libkeepass-master.ref   = "refs/heads/master";
   inputs.src-libkeepass-master.owner = "PMunch";
   inputs.src-libkeepass-master.repo  = "libkeepass";
-  inputs.src-libkeepass-master.dir   = "";
   inputs.src-libkeepass-master.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
