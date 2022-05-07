@@ -21,23 +21,55 @@
         "type": "github"
       }
     },
-    "nimaes": {
+    "libkeepass-master": {
       "inputs": {
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
+        "nimaes": "nimaes",
+        "nimsha2": "nimsha2",
         "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libkeepass-master": "src-libkeepass-master",
+        "zip": "zip"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651591253,
+        "narHash": "sha256-Tute0WPgJnFUzGF5Lp7JcQikJg5norPuCqiubSVATPs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libkeepass",
+        "rev": "cbf0f01f6fdab7fb6b7c3e696668e6973cb46f60",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libkeepass",
+        "type": "github"
+      }
+    },
+    "nimaes": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libkeepass-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libkeepass-master",
           "nixpkgs"
         ],
         "src-nimAES-master": "src-nimAES-master"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1651918175,
-        "narHash": "sha256-+gX1GUiHanbnxyx8ds+lXD8fTpZpzVLAjFuLqEjyLjg=",
+        "lastModified": 1651555704,
+        "narHash": "sha256-EC3SNN+eZGM4lqclCBuBuMWTS8emo4M2FTu7+NNl8b0=",
         "owner": "nim-nix-pkgs",
         "repo": "nimaes",
-        "rev": "c6869a028011efba2bc52d8c7f9d1a45b9cc0b86",
+        "rev": "283e0ccd2b5e216a424fa6463c38669b3e2d1b83",
         "type": "github"
       },
       "original": {
@@ -51,20 +83,22 @@
     "nimsha2": {
       "inputs": {
         "flakeNimbleLib": [
+          "libkeepass-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "libkeepass-master",
           "nixpkgs"
         ],
         "src-nimSHA2-master": "src-nimSHA2-master"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1651918228,
-        "narHash": "sha256-DH7tJ9o4MuE5v7W0VnD56M39TQRfl1D58i0AvFnjAWQ=",
+        "lastModified": 1651555775,
+        "narHash": "sha256-stsXLe1WrbnRH3xl1peiJby9C7D5/hb+TKDHabWoBWQ=",
         "owner": "nim-nix-pkgs",
         "repo": "nimsha2",
-        "rev": "309b65a1911f68632ee28d9562f36a7cfb4c04b2",
+        "rev": "e08e950959a512478aa13e4de7c5c1193ddd36c9",
         "type": "github"
       },
       "original": {
@@ -89,11 +123,8 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nimaes": "nimaes",
-        "nimsha2": "nimsha2",
-        "nixpkgs": "nixpkgs",
-        "src-libkeepass-master": "src-libkeepass-master",
-        "zip": "zip"
+        "libkeepass-master": "libkeepass-master",
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-libkeepass-master": {
@@ -167,20 +198,22 @@
     "zip": {
       "inputs": {
         "flakeNimbleLib": [
+          "libkeepass-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "libkeepass-master",
           "nixpkgs"
         ],
         "src-zip-0_3_1": "src-zip-0_3_1"
       },
       "locked": {
         "dir": "0_3_1",
-        "lastModified": 1651918630,
-        "narHash": "sha256-C8QN5Q3RFKBJABVXurB3/QXJDnuEasEWg0vmt/5A65o=",
+        "lastModified": 1651556292,
+        "narHash": "sha256-w3cAqmBo8wkS0E4zBcxzViGeLZxHdwocjHF252sVW1w=",
         "owner": "nim-nix-pkgs",
         "repo": "zip",
-        "rev": "5f62a53c0d39736fde0c682b7403d4e5333edde8",
+        "rev": "04c0b3e1a02ba029457bffcf75300e05f45bf7de",
         "type": "github"
       },
       "original": {
